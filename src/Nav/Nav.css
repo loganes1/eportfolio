@@ -1,0 +1,55 @@
+nav {
+    position: absolute;
+    left: calc(-1 * var(--width));
+    width: var(--width);
+    background-color: antiquewhite;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 150ms;
+
+    --border-radius: 15%;
+    --width: 80px;
+}
+
+nav.open {
+    left: 0;
+}
+
+nav .top-margin {
+    height: 25%;
+
+}
+
+nav .content {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav .content div {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: center;
+}
+
+nav .icon {
+    width: 40px;
+    background-color: white;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+nav .vertical {
+    transform: rotate(270deg);
+    top: -30px;
+    position: relative;
+}
+
+nav p {
+    margin: 0;
+    font-size: 1.25em;
+    margin-left: 30px;
+}
