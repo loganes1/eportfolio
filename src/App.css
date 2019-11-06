@@ -2,3 +2,11 @@ html, body, #root, .app {
   height: 100%;
   background-color: #D8D8D8;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #262626;
+}
+
+main {
+  padding: 75px 15px;
+}

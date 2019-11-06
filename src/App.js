@@ -3,21 +3,25 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Nav from "./Nav/Nav";
 import Hamburger from './Nav/Hamburger';
-import Home from "./Nav/Icon/Home";
+import Home from "./Home/Home";
+import Lightbulb from "./Nav/Icon/Lightblub";
 
 export default function App() {
   return (
     <Router>
-      <div className="app">
-        <Hamburger />
-        <Nav />
+      <Hamburger />
+      <Nav onClick={Hamburger.toggleIsActive} />
 
+      <main className="app">
         <Switch>
-          <Route path="/home">
+          <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/skills">
+            <Lightbulb />
+          </Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }

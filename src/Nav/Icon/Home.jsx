@@ -2,7 +2,7 @@ import React from "react"
 
 export default class Icon extends React.Component {
     render() {
-        return (<svg className="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        return (<svg className="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 200 200">
    <path d="M166.9,112.8v62.9c0,2.3-0.7,4.2-2.2,5.9c-1.5,1.7-3.2,2.5-5.2,2.5h-44.6v-50.3H85.1v50.3H40.5c-2,0-3.8-0.8-5.2-2.5
        c-1.5-1.7-2.2-3.6-2.2-5.9v-62.9c0-0.1,0-0.2,0.1-0.4c0-0.2,0.1-0.3,0.1-0.4L100,49.9l66.8,62.1
