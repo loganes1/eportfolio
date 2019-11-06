@@ -1,0 +1,4 @@
+Background: #D8D8D8
+Accent:     #D84169
+Grey:       #595959
+Black:      #262626

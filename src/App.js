@@ -1,15 +1,23 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Nav from "./Nav/Nav";
 import Hamburger from './Nav/Hamburger';
+import Home from "./Nav/Icon/Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="app">
-      <Hamburger />
-      <Nav />
-    </div>
+    <Router>
+      <div className="app">
+        <Hamburger />
+        <Nav />
+
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
