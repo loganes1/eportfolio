@@ -4,6 +4,7 @@ import './App.css';
 import Nav from "./Nav/Nav";
 import Hamburger from './Nav/Hamburger';
 import Home from "./Home/Home";
+import Skills from "./Skills/Skills";
 
 export default class App extends React.Component {
   toggleNavIsActive() {
@@ -25,6 +26,7 @@ export default class App extends React.Component {
             <Home />
           </Route>
           <Route path="/skills">
+            <Skills />
           </Route>
           <Route path="/projects">
           </Route>
