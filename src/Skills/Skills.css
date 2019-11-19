@@ -1,21 +1,24 @@
-.technologies {
+.skills section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    margin: auto;
 }
 
-.technologies::after {
+/* Justify with last line left aligned */
+.skills section:not(.practice)::after {
     content: "";
     flex: auto;
 }
 
-.technologies .technology {
+.skills section .technology {
     height: 75px;
     width: 75px;
     margin: 25px 5px;
     align-items: center;
     display: inherit;
     flex-direction: column;
+}
+
+.skills section.practice {
+    justify-content: space-around;
 }

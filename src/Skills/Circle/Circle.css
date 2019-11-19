@@ -1,0 +1,33 @@
+.circle {
+    width: 130px;
+    height: 130px;
+}
+
+.circle-foreground {
+    stroke: #D84169;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+}
+
+/* The container for the circles, percent, and description */
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-container .percentage {
+    position: relative;
+    bottom: 40%;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.circle-container .description {
+    text-align: center;
+    position: relative;
+    bottom: 10%;
+    margin-top: 0;
+}

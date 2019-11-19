@@ -17,8 +17,8 @@ export default class App extends React.Component {
 
   render() {
     return <Router>
-      <Hamburger onClick={this.toggleNavIsActive}/>
-      <Nav onClick={this.toggleNavIsActive}/>
+      <Hamburger onClick={this.toggleNavIsActive} />
+      <Nav onClick={this.toggleNavIsActive} />
 
       <main className="app">
         <Switch>
