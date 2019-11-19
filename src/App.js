@@ -5,6 +5,7 @@ import Nav from "./Nav/Nav";
 import Hamburger from './Nav/Hamburger';
 import Home from "./Home/Home";
 import Skills from "./Skills/Skills";
+import WorkExp from "./WorkExp/WorkExp";
 
 export default class App extends React.Component {
   toggleNavIsActive() {
@@ -31,6 +32,7 @@ export default class App extends React.Component {
           <Route path="/projects">
           </Route>
           <Route path="/work-experience">
+            <WorkExp />
           </Route>
         </Switch>
       </main>

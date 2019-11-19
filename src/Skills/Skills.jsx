@@ -4,6 +4,10 @@ import Technology from "./Technology/Technology";
 import Circle from "./Circle/Circle";
 
 export default class Skills extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+    
     render() {
         return <section className="skills">
             <h2>Languages</h2>
