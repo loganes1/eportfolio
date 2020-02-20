@@ -1,9 +1,8 @@
 nav {
     position: fixed;
-    left: calc(-1 * var(--width));
-    width: var(--width);
-    background-color: #0000007e;
-    backdrop-filter: blur(5px);
+    left: calc(-1 * var(--nav-width));
+    width: var(--nav-width);
+    background-color: #262626;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,6 @@ nav {
     z-index: 1;
 
     --border-radius: 15%;
-    --width: 80px;
 }
 
 nav.open {
@@ -20,11 +18,10 @@ nav.open {
 
 nav .top-margin {
     height: 25%;
-
 }
 
 nav .content {
-    height: 75%;
+    height: 58%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

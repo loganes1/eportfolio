@@ -9,11 +9,14 @@ import WorkExp from "./WorkExp/WorkExp";
 
 export default class App extends React.Component {
   toggleNavIsActive() {
+    // toggle from a hamburger to an 'X'
     const hamburger = document.getElementById("hamburger");
     hamburger.classList.toggle("is-active");
     // show/hide the menu
     const nav = document.getElementById("nav");
     nav.classList.toggle("open");
+    const main = document.querySelector(".app");
+    main.classList.toggle("open");
   }
 
   render() {
