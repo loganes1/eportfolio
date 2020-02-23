@@ -1,3 +1,26 @@
 .company .right-align {
     text-align: right;
 }
+
+.company h2 {
+    margin-top: 0;
+}
+
+.company h3 {
+    margin: 0;
+}
+
+.indent-20px {
+    margin-left: 20px;
+}
+
+.company label {
+    font-style: italic;
+    font-size: .75em;
+}
+
+.company ul {
+    margin: 5px 0 15px 0;
+    padding-left: 20px;
+    font-size: .9em;
+}

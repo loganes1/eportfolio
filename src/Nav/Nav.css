@@ -4,8 +4,9 @@ nav {
     width: var(--nav-width);
     background-color: #262626;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 10% auto 15%;
+    grid-template-columns: 100%;
     transition: 150ms;
     z-index: 1;
 
@@ -16,29 +17,28 @@ nav.open {
     left: 0;
 }
 
-nav .top-margin {
-    height: 25%;
-}
-
 nav .content {
-    height: 58%;
+    /* height: 58%; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-nav .content div {
-    display: inherit;
-    flex-direction: inherit;
     align-items: center;
+    /* justify-content: space-between; */
+    grid-row: 2/3;
 }
 
 nav .icon {
     width: 40px;
     background-color: #D8D8D8;
     padding: 8px;
+    padding-bottom: 25px;
     border-radius: var(--border-radius);
-    margin-bottom: 20px;
+}
+
+nav a p {
+    font-size: .85em;
+    position: relative;
+    top: -25px;
+    text-align: center;
 }
 
 nav .icon path,
@@ -48,8 +48,9 @@ nav .icon polygon {
 
 nav .vertical {
     transform: rotate(270deg);
-    top: -30px;
     position: relative;
+    left: 75%;
+    grid-row: 3;
 }
 
 nav a {
@@ -60,8 +61,10 @@ nav p,
 nav .vertical a {
     margin: 0;
     font-size: 1.25em;
-    margin-left: 30px;
     color: #D84169;
     width: auto;
+}
+
+nav .vertical a {
     padding: 15px;
 }

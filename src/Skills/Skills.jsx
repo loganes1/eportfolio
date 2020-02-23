@@ -7,7 +7,7 @@ export default class Skills extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0)
     }
-    
+
     render() {
         return <section className="skills">
             <h2>Languages</h2>
@@ -15,17 +15,20 @@ export default class Skills extends React.Component {
                 <Technology imgPath={require("./logos/html5.svg")} alt="HTML5" label="HTML5" />
                 <Technology imgPath={require("./logos/css3.svg")} alt="CSS3" label="CSS3" />
                 <Technology imgPath={require("./logos/js.svg")} alt="JavaScript" label="JavaScript" />
-                <Technology imgPath={require("./logos/react.svg")} alt="React" label="React" />
-                <Technology imgPath={require("./logos/nodejs.svg")} alt="Node.js" label="Node.js" />
-                <Technology imgPath={require("./logos/momentjs.svg")} alt="Moment.js" label="Moment.js" />
-                <Technology imgPath={require("./logos/jquery.svg")} alt="jQuery" label="jQuery" />
                 <Technology imgPath={require("./logos/c++.svg")} alt="C++" label="C++" />
                 <Technology imgPath={require("./logos/csharp.svg")} alt="C#" label="C#" />
-                <Technology imgPath={require("./logos/dot-net.svg")} alt=".NET" label=".NET" />
                 <Technology imgPath={require("./logos/vba.svg")} alt="VBA" label="VBA" />
                 <Technology imgPath={require("./logos/php.svg")} alt="PHP" label="PHP" />
                 <Technology imgPath={require("./logos/psql.svg")} alt="PostgresSQL" label="PostgresSQL" />
                 <Technology imgPath={require("./logos/git.svg")} alt="Git" label="Git" />
+            </section>
+            <h2>Frameworks</h2>
+            <section>
+                <Technology imgPath={require("./logos/react.svg")} alt="React" label="React" />
+                <Technology imgPath={require("./logos/nodejs.svg")} alt="Node.js" label="Node.js" />
+                <Technology imgPath={require("./logos/momentjs.svg")} alt="Moment.js" label="Moment.js" />
+                <Technology imgPath={require("./logos/jquery.svg")} alt="jQuery" label="jQuery" />
+                <Technology imgPath={require("./logos/dot-net.svg")} alt=".NET" label=".NET" />
             </section>
             <h2>Software</h2>
             <section>
