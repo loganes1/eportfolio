@@ -1,0 +1,17 @@
+$dark-primary:   #444140;
+$dark-secondary: #EBEBEB;
+$dark-accent:    #4392F1;
+
+$light-primary:   $dark-secondary;
+$light-secondary: $dark-primary;
+$light-accent:    #F09B3E;
+
+:export {
+  dark-primary:   $dark-primary;
+  dark-secondary: $dark-secondary;
+  dark-accent:    $dark-accent;
+
+  light-primary:   $dark-secondary;
+  light-secondary: $dark-primary;
+  light-accent:    $light-accent;
+}
