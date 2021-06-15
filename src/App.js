@@ -17,7 +17,7 @@ function App() {
         </Switch>
       </BrowserRouter>
       <button onClick={() => setTheme((s) => s === 'dark' ? 'light' : 'dark')}>Toggle Theme</button>
-      <span>{theme}</span>
+      <span>  {theme}</span>
     </section>
   )
 }
