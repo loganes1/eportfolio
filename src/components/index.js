@@ -1,1 +1,3 @@
-export { Heading} from './Type'
+export { Heading } from './Type'
+
+export default null
