@@ -4,7 +4,7 @@ import { Landing } from './pages'
 import './theme/type.module.scss'
 import { colorsCss } from './theme/colors'
 
-function App() {
+export default function App() {
   const [theme, setTheme] = React.useState('dark')
 
   return (
@@ -24,5 +24,3 @@ function App() {
     </section>
   )
 }
-
-export default App
