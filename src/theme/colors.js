@@ -1,6 +1,6 @@
 import colors from './colors.module.scss'
 
-export const colorsCss = (theme) => {
+export const colorsCssVars = (theme) => {
   if (theme === 'dark') {
     return {
       '--primary': colors['dark-primary'],
