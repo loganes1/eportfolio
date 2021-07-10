@@ -7,20 +7,25 @@
 .heading {
   @extend .shared;
   font-family: 'Oswald', sans-serif;
-  font-size: 64pt;
   color: var(--secondary);
   line-height: 1em;
   margin: 0 0 50px;
+  font-size: 30pt;
 
   &[data-size='lg'] {
     margin-bottom: 15px;
+    font-size: 64pt;
   }
 }
 
 .overHeading {
   @extend .shared;
   font-family: 'Raleway', sans-serif;
-  font-size: 24pt;
   color: var(--accent);
   margin: 0;
+  font-size: 16pt;
+  
+  &[data-size='lg'] {
+    font-size: 24pt;
+  }
 }

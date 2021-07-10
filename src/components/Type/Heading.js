@@ -1,7 +1,9 @@
+import { useScreenSize } from '../../helpers'
 import * as styles from './Heading.module.scss'
 
-export default function Heading({ children, overHeading, size = 'sm' }) {
-  const subHeading = <h2 className={styles.overHeading}>{overHeading}</h2>
+export default function Heading({ children, overHeading }) {
+  const size = useScreenSize()
+  const subHeading = <h2 className={styles.overHeading} data-size={size}>{overHeading}</h2>
   return (
     <>
       {size === 'sm' && subHeading}
